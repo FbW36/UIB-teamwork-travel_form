@@ -1,0 +1,136 @@
+:root {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  font-size: 2rem;
+}
+
+main {
+  background-image: url(/images/dino-reichmuth-A5rCN8626Ck-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+h1 {
+  /* display: inline-block;
+  align-content: center; */
+  width: 60%;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  margin: 0 auto;
+  vertical-align: middle;
+  position: relative;
+  top: 40%;
+}
+
+.container {
+  width: 60%;
+  position: relative;
+  margin: 0 auto;
+  top: 50%;
+}
+
+.from,
+.to {
+  display: inline-block;
+  position: relative;
+  margin: 0.5rem;
+  /* width: 50%; */
+}
+
+from{
+    margin: 0 auto;
+}
+
+label {
+  /* display: inline-block; */
+  background: #dc0000;
+  color: #efefef;
+  padding: 5px 10px;
+  font-weight: 700;
+  position: relative;
+  top: 3px;
+  margin-right: -5px;
+}
+
+input {
+  padding: 7px;
+  margin-left: -3px;
+}
+
+.buttons {
+  width: 80%;
+  margin: 0 auto;
+}
+
+button {
+  padding: 1rem 2rem;
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+
+  position: relative;
+}
+
+button[type="reset"] {
+  background: #f8f8f6e1;
+  color: #dc0000;
+  font-weight: 500;
+  border: 1px solid #dc0000;
+  text-shadow: 1px 1px 1px rgb(199, 194, 194);
+}
+
+button[type="submit"] {
+  background: #dc0000;
+  color: #f0f0ea;
+  border: none;
+  outline: none;
+  font-weight: 600;
+}
+
+/* Media Queries */
+
+/* Media Queries: Tablet Landscape */
+
+@media screen and (max-width: 600px) {
+  h1 {
+    width: 90%;
+    font-size: 3.5rem;
+    top: 20%;
+  }
+
+  .container {
+    width: 90%;
+    top: 25%;
+  }
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (min-width: 601px) {
+    .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (min-width: 768px) {
+  /* Media Queries: Tablet Landscape */
+  @media screen and (max-width: 1060px) {
+    #primary {
+      width: 67%;
+    }
+    #secondary {
+      width: 30%;
+      margin-left: 3%;
+    }
+  }
+}
