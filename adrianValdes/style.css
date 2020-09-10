@@ -1,0 +1,105 @@
+:root {
+  font-size: 62.5%;
+  --red: #dc0000;
+  --white: rgba(255, 255, 255, 0.829);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  color: #efefef;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+    url(images/dino-reichmuth-A5rCN8626Ck-unsplash.jpg) center / cover no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-shadow: 0 0 1px transparent;
+  margin-bottom: 4rem;
+  color: var(--white);
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrapper div {
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  padding: 0.5rem 0rem;
+}
+
+label {
+  padding: 0.67rem;
+  text-align: center;
+  background-color: var(--red);
+}
+label[for='to'] {
+  margin-left: 1rem;
+}
+input {
+  border: none;
+  padding: 0.8rem 0.5rem;
+  width: 100%;
+}
+
+input:focus {
+  outline: 1px solid royalblue;
+}
+
+.btn-container {
+  margin: 1.5rem 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  background: none;
+  padding: 0.8rem 1rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.letsgo {
+  margin-left: 1.5rem;
+  color: #efefef;
+  background-color: var(--red);
+}
+.letsgo:hover {
+  color: var(--red);
+  background-color: var(--white);
+}
+.surprise {
+  border: 1px solid var(--red);
+  color: var(--red);
+  background-color: var(--white);
+}
+.surprise:hover {
+  color: var(--white);
+  background-color: var(--red);
+}
+
+@media (max-width: 768px) {
+  body {
+    background-position: 30% 0;
+  }
+  .wrapper {
+    flex-direction: column;
+  }
+  label[for='to'] {
+    margin-left: 0rem;
+  }
+}
